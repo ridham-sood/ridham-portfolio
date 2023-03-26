@@ -23,6 +23,7 @@ import { contactsData } from '../../Data/contactsData';
 import './Contacts.css';
 
 function Contacts() {
+
     return (
         <div
             className='contacts'
@@ -62,7 +63,7 @@ function Contacts() {
                     <div className='contacts-details'>
                         <div href={`mailto:ridhamsood1@gmail.com`} className='personal-details' >
                             <div>
-                                <FiAtSign style={{ color: theme.tertiary }} />
+                                <FiAtSign style={{ color: theme.tertiary }}/>
                             </div>
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.email}
@@ -70,7 +71,7 @@ function Contacts() {
                         </div>
                         <div href={`tel:${contactsData.phone}`} className='personal-details' >
                             <div>
-                                <FiPhone style={{ color: theme.tertiary }} />
+                                <FiPhone style={{ color: theme.tertiary }}/>
                             </div>
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.phone}
@@ -78,7 +79,7 @@ function Contacts() {
                         </div>
                         <div className='personal-details'>
                             <div>
-                                <HiOutlineLocationMarker style={{ color: theme.tertiary }} />
+                                <HiOutlineLocationMarker style={{ color: theme.tertiary }}/>
                             </div>
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.address}
