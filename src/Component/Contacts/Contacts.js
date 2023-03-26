@@ -26,6 +26,7 @@ function Contacts() {
 
     return (
         <div
+            name = 'contact'
             className='contacts'
             id='contacts'
             style={{ backgroundColor: theme.primary }}

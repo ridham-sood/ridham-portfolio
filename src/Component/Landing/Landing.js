@@ -9,7 +9,7 @@ import {
 import theme from '../../Data/Theme';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-
+import { Link } from 'react-scroll';
 
 const ColorButton = styled(Button)(({ theme }) => ({
     color: "#ccd6f6",
@@ -38,10 +38,15 @@ function Landing() {
                         <h6>RIDHAM SOOD</h6>
                         <h1>I'm a Developer.</h1>
                         <div className='lcr-buttonContainer'>
-                            <ColorButton variant="contained">Resume</ColorButton>
-                            <ColorButton variant="contained">Contact</ColorButton>
+                            <ColorButton variant="contained" href='https://drive.google.com/file/d/1RMrmGVIBIlaxDooEymgPOZvASpSjUi9h/view?usp=sharing'  target='_blank' rel='noreferrer'>Resume</ColorButton>
+                            <div className='hidden-button'>
+                                <Link to="contact" smooth={true} duration={500} >
+                                    <ColorButton className='hidden-button' variant="contained">Contact</ColorButton>
+                                </Link>
+                            </div>
+
                         </div>
-                        <div className='lcl--content'> 
+                        <div className='lcl--content'>
                             <div className='landing--social'>
                                 <a href='https://www.instagram.com/benner.exe/' target='_blank' rel='noreferrer'>
                                     <FaInstagram className='landing--social' style={{ color: theme.tertiary }} aria-label='LinkedIn' />
@@ -61,7 +66,7 @@ function Landing() {
                                 <a href='https://github.com/ridham-sood' target='_blank' rel='noreferrer'>
                                     <FaGithub className='landing--social' style={{ color: theme.tertiary }} aria-label='LinkedIn' />
                                 </a>
-                            </div>  
+                            </div>
                         </div>
                     </div>
 

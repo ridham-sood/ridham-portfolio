@@ -5,6 +5,8 @@
   justify-content: center;
 }
 
+
+
 .landing--container {
   display: flex;
   align-items: center;
@@ -155,6 +157,10 @@
 }
 
 @media (max-width: 600px) {
+
+  .hidden-button{
+    display: none;
+  }
 
   .landing--container {
     flex-direction: column;
