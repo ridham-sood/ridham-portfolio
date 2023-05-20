@@ -57,6 +57,7 @@
 }
 
 .about-description > p {
+    word-spacing: .20rem;
     font-size: 1.25rem;
     opacity: 0.89;
 }

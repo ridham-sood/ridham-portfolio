@@ -2,7 +2,7 @@ export const experienceData = [
     {
         id: 1,
         institution: 'Wipro Technology',
-        course: 'Cyber Security Analyst',
+        course: 'Project Engineer',
         startYear: 'July - 2021',
         endYear: 'Present'
     },

@@ -1,24 +1,13 @@
-import React, { useContext, useState } from 'react';
-import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
 import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBloggerB,
-    FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
     FaInstagram,
-    FaGitlab,
-    FaMediumM,
 } from 'react-icons/fa';
-import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import theme from '../../Data/Theme';
-import { socialsData } from '../../Data/socialsData';
 import { contactsData } from '../../Data/contactsData';
 import './Contacts.css';
 

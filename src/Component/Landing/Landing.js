@@ -10,6 +10,8 @@ import theme from '../../Data/Theme';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
+import resume from '../pdf/resume.pdf';
+
 
 const ColorButton = styled(Button)(({ theme }) => ({
     color: "#ccd6f6",
@@ -29,6 +31,10 @@ const ColorButton = styled(Button)(({ theme }) => ({
 
 function Landing() {
 
+    const handleButtonClick = () => {
+        window.open('./resume.pdf', '_blank');
+      };
+
     return (
         <div className='landing' style={{ backgroundColor: theme.primary }} >
             <div className='landing--container' style={{ backgroundColor: theme.primary }} >
@@ -38,7 +44,7 @@ function Landing() {
                         <h6>RIDHAM SOOD</h6>
                         <h1>I'm a Developer.</h1>
                         <div className='lcr-buttonContainer'>
-                            <ColorButton variant="contained" href='https://drive.google.com/file/d/1RMrmGVIBIlaxDooEymgPOZvASpSjUi9h/view?usp=sharing'  target='_blank' rel='noreferrer'>Resume</ColorButton>
+                            <ColorButton variant="contained" href={resume}  target='_blank' rel='noreferrer'>Resume</ColorButton>
                             <div className='hidden-button'>
                                 <Link to="contact" smooth={true} duration={500} >
                                     <ColorButton className='hidden-button' variant="contained">Contact</ColorButton>

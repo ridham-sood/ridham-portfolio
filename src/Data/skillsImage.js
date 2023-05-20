@@ -75,6 +75,10 @@ import canva from '../assets/svg/skills/canva.svg'
 import github from '../assets/svg/skills/github.svg'
 import spring from '../assets/svg/skills/spring.svg'
 import hibernate from '../assets/svg/skills/hibernate.svg'
+import jenkins from '../assets/svg/skills/jenkins.svg'
+import kubernetes from '../assets/svg/skills/kubernetes.svg'
+import maven from '../assets/svg/skills/maven.svg'
+import jira from '../assets/svg/skills/jira.svg'
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -233,6 +237,14 @@ export const skillsImage = (skill) => {
             return github;
         case 'spring':
             return spring;
+        case 'jenkins':
+            return jenkins;
+        case 'kubernetes':
+            return kubernetes;
+        case 'maven':
+            return maven;
+        case 'jira':
+            return jira;
         default:
             break;
     }
